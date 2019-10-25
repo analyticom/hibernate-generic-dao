@@ -17,11 +17,11 @@
 	</licenses>
 
 	<!-- For upload to Sonatype Open Source Maven staging Repo -->
-	<parent>
+	<!--<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
 		<version>5</version>
-	</parent>
+	</parent>-->
 
 	<modules>
 		<module>test-base</module>
@@ -111,4 +111,16 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+    <repository>
+      <id>jfrog.analyticom.de-releases-id</id>
+      <name>jfrog.analyticom.de-releases</name>
+      <url>https://jfrog.analyticom.de/artifactory/analyticom-mvn-extlibs-local</url>
+    </repository>
+
+
+  </distributionManagement>
+
+
 </project>
